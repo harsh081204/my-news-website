@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZapNews</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="company-logo">
+          <img src="ZapNews (1).png" alt="logo" />
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li class="hover-link" id="sports" onclick="onNavItemClick('sports')">SPORTS</li>
+            <li class="hover-link" id="business"  onclick="onNavItemClick('business')">BUSINESS</li>
+            <li class="hover-link" id="politics" onclick="onNavItemClick('politics')">POLITICS</li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <input id="search-text" type="text" class="news-input" placeholder="e.g. AI,AGI" />
+          <button id="search-button" class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+          
+        </div>
+    </main>
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img src="https://via.placeholder.com/400x200" alt="newsImg" id="news-img">
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the Title</h3>
+          <h6 class="news-source" id="news-source">End Gadget 20/09/2024</h6>
+          <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, eos.</p>
+        </div>
+      </div>
+    </template>
+
+  </body>
+  <script src="script.js"></script>
+</html>
